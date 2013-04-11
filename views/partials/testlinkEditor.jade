@@ -1,0 +1,20 @@
+//
+   Created with JetBrains WebStorm.
+   User: seu
+   Date: 11.04.13
+   Time: 14:07
+   To change this template use File | Settings | File Templates.
+
+section(ng-controller='TestlinkEditorCtrl')
+  p
+    label(for='testlinkInput') Copy Testlink HTML here:
+    br
+    textarea(id='testlinkInput', ng-model='sourceHtml', ng-change='changedSoureHtml()', rows=5, class='full-width')
+  p
+    label(for='markdownInput') Edit Markdown here:
+    br
+    textarea(id='markdownInput', ng-model='markdown', ng-change='changedMarkdown()', rows=10, class='full-width')
+  p
+    label(for='htmlOut') Copy HTML back to XML from here:
+    br
+    textarea(id='htmlOut', ng-model='outHtml', rows=5, class='full-width')
